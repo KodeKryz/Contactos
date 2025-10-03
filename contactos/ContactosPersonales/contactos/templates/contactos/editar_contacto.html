@@ -25,7 +25,7 @@
             {% endfor %}
             
             <div class="flex space-x-4 pt-4">
-                <button type="submit" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200">
+                <button type="submit" class="flex-1 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200">
                     Actualizar Contacto
                 </button>
                 <a href="{% url 'detalle_contacto' contacto.id %}" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg text-center transition duration-200">
@@ -43,7 +43,7 @@
         const inputs = document.querySelectorAll('input, textarea, select');
         inputs.forEach(input => {
             if (input.type !== 'checkbox') {
-                input.classList.add('w-full', 'px-3', 'py-2', 'border', 'border-gray-300', 'rounded-md', 'shadow-sm', 'focus:outline-none', 'focus:ring-2', 'focus:ring-green-500', 'focus:border-green-500');
+                input.classList.add('w-full', 'px-3', 'py-2', 'border', 'border-gray-300', 'rounded-md', 'shadow-sm', 'focus:outline-none', 'focus:ring-2', 'focus:ring-red-500', 'focus:border-red-500');
             }
         });
     });
